@@ -7,15 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B05219F2A38F23C00768B6B /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B05219E2A38F23C00768B6B /* SignupFormModelValidatorTests.swift */; };
+		0B0521A12A38F28C00768B6B /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0521A02A38F28C00768B6B /* SignupFormModelValidator.swift */; };
+		0B0656702A39AE3700434C83 /* UserModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B06566F2A39AE3700434C83 /* UserModelValidator.swift */; };
+		0B0656732A39AE5900434C83 /* UserModelValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0656722A39AE5900434C83 /* UserModelValidatorProtocol.swift */; };
+		0B0656752A39AF7D00434C83 /* UserWebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0656742A39AF7D00434C83 /* UserWebServiceProtocol.swift */; };
+		0B0656772A39B64A00434C83 /* MockUserWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0656762A39B64A00434C83 /* MockUserWebService.swift */; };
+		0B0656792A39BDB200434C83 /* MockUserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0656782A39BDB200434C83 /* MockUserDelegate.swift */; };
+		0B06567B2A39BFCE00434C83 /* UserViewDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B06567A2A39BFCE00434C83 /* UserViewDelegateProtocol.swift */; };
 		0B0727912A32517100CD1A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0727902A32517100CD1A7F /* AppDelegate.swift */; };
 		0B0727932A32517100CD1A7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0727922A32517100CD1A7F /* SceneDelegate.swift */; };
 		0B0727952A32517100CD1A7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0727942A32517100CD1A7F /* ViewController.swift */; };
 		0B0727982A32517100CD1A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B0727962A32517100CD1A7F /* Main.storyboard */; };
 		0B07279A2A32517200CD1A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B0727992A32517200CD1A7F /* Assets.xcassets */; };
 		0B07279D2A32517200CD1A7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B07279B2A32517200CD1A7F /* LaunchScreen.storyboard */; };
+		0B0727AE2A32530900CD1A7F /* WebServiceUnitTestSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0727AD2A32530900CD1A7F /* WebServiceUnitTestSampleTests.swift */; };
+		0B0727B52A32532600CD1A7F /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0727B42A32532600CD1A7F /* SignupWebServiceTests.swift */; };
+		0B0727B72A3254B100CD1A7F /* SignupWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0727B62A3254B100CD1A7F /* SignupWebService.swift */; };
+		0B0727B92A32557400CD1A7F /* SignupFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0727B82A32557400CD1A7F /* SignupFormRequestModel.swift */; };
+		0B0727BB2A3256C700CD1A7F /* SignupResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0727BA2A3256C700CD1A7F /* SignupResponseModel.swift */; };
+		0B0727BD2A3256E200CD1A7F /* SignupErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0727BC2A3256E200CD1A7F /* SignupErrors.swift */; };
+		0B0727C62A325EFE00CD1A7F /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0727C52A325EFE00CD1A7F /* MockURLProtocol.swift */; };
+		0B0727C82A32604100CD1A7F /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0727C72A32604100CD1A7F /* SignupConstants.swift */; };
+		0B2347CE2A36E7B500D43FD8 /* SignupPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2347CD2A36E7B500D43FD8 /* SignupPresenterTest.swift */; };
+		0B2347D02A36E8C300D43FD8 /* SignupFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2347CF2A36E8C300D43FD8 /* SignupFormModel.swift */; };
+		0B2347D22A36EB7400D43FD8 /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2347D12A36EB7400D43FD8 /* SignupPresenter.swift */; };
+		0B2347D42A36EC5300D43FD8 /* MockSignupModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2347D32A36EC5300D43FD8 /* MockSignupModelValidator.swift */; };
+		0B2347D62A36EDC700D43FD8 /* SignupModelValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2347D52A36EDC700D43FD8 /* SignupModelValidatorProtocol.swift */; };
+		0B2347DE2A36FED700D43FD8 /* MockSignupWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2347DD2A36FED700D43FD8 /* MockSignupWebService.swift */; };
+		0B2347E02A36FFC800D43FD8 /* SignupWebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2347DF2A36FFC800D43FD8 /* SignupWebServiceProtocol.swift */; };
+		0B2347E22A37048D00D43FD8 /* MockSignupViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2347E12A37048D00D43FD8 /* MockSignupViewDelegate.swift */; };
+		0B2347E42A37054700D43FD8 /* SignupViewDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2347E32A37054700D43FD8 /* SignupViewDelegateProtocol.swift */; };
+		0BB905432A397FEC008E4F85 /* UserWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB905422A397FEC008E4F85 /* UserWebServiceTests.swift */; };
+		0BB905462A398370008E4F85 /* UserPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB905452A398370008E4F85 /* UserPresenterTests.swift */; };
+		0BB905482A39859C008E4F85 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB905472A39859C008E4F85 /* UserPresenter.swift */; };
+		0BB9054D2A39872F008E4F85 /* MockUserModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB9054C2A39872F008E4F85 /* MockUserModelValidator.swift */; };
+		0BBC0DB92A32E7010094657C /* UserResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC0DB82A32E7010094657C /* UserResponseModel.swift */; };
+		0BBC0DC22A32E7F30094657C /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC0DC12A32E7F30094657C /* UsersViewController.swift */; };
+		0BBC0DC62A32E84C0094657C /* UsersListingSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC0DC52A32E84C0094657C /* UsersListingSampleTests.swift */; };
+		0BBC0DC82A32E8710094657C /* UsersConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC0DC72A32E8710094657C /* UsersConstants.swift */; };
+		0BBC0DCA2A32E94A0094657C /* UsersWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC0DC92A32E94A0094657C /* UsersWebService.swift */; };
+		0BBC0DCE2A32EA500094657C /* UserErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC0DCD2A32EA500094657C /* UserErrors.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0B0727AF2A32530900CD1A7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B0727852A32517100CD1A7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B07278C2A32517100CD1A7F;
+			remoteInfo = WebServiceUnitTestSample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0B05219E2A38F23C00768B6B /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
+		0B0521A02A38F28C00768B6B /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
+		0B06566F2A39AE3700434C83 /* UserModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelValidator.swift; sourceTree = "<group>"; };
+		0B0656722A39AE5900434C83 /* UserModelValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelValidatorProtocol.swift; sourceTree = "<group>"; };
+		0B0656742A39AF7D00434C83 /* UserWebServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWebServiceProtocol.swift; sourceTree = "<group>"; };
+		0B0656762A39B64A00434C83 /* MockUserWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserWebService.swift; sourceTree = "<group>"; };
+		0B0656782A39BDB200434C83 /* MockUserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserDelegate.swift; sourceTree = "<group>"; };
+		0B06567A2A39BFCE00434C83 /* UserViewDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewDelegateProtocol.swift; sourceTree = "<group>"; };
 		0B07278D2A32517100CD1A7F /* WebServiceUnitTestSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebServiceUnitTestSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B0727902A32517100CD1A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B0727922A32517100CD1A7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +77,34 @@
 		0B0727992A32517200CD1A7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B07279C2A32517200CD1A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B07279E2A32517200CD1A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B0727AB2A32530900CD1A7F /* WebServiceUnitTestSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebServiceUnitTestSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B0727AD2A32530900CD1A7F /* WebServiceUnitTestSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceUnitTestSampleTests.swift; sourceTree = "<group>"; };
+		0B0727B42A32532600CD1A7F /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
+		0B0727B62A3254B100CD1A7F /* SignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebService.swift; sourceTree = "<group>"; };
+		0B0727B82A32557400CD1A7F /* SignupFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormRequestModel.swift; sourceTree = "<group>"; };
+		0B0727BA2A3256C700CD1A7F /* SignupResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseModel.swift; sourceTree = "<group>"; };
+		0B0727BC2A3256E200CD1A7F /* SignupErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupErrors.swift; sourceTree = "<group>"; };
+		0B0727C52A325EFE00CD1A7F /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		0B0727C72A32604100CD1A7F /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
+		0B2347CD2A36E7B500D43FD8 /* SignupPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterTest.swift; sourceTree = "<group>"; };
+		0B2347CF2A36E8C300D43FD8 /* SignupFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModel.swift; sourceTree = "<group>"; };
+		0B2347D12A36EB7400D43FD8 /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
+		0B2347D32A36EC5300D43FD8 /* MockSignupModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupModelValidator.swift; sourceTree = "<group>"; };
+		0B2347D52A36EDC700D43FD8 /* SignupModelValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModelValidatorProtocol.swift; sourceTree = "<group>"; };
+		0B2347DD2A36FED700D43FD8 /* MockSignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupWebService.swift; sourceTree = "<group>"; };
+		0B2347DF2A36FFC800D43FD8 /* SignupWebServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceProtocol.swift; sourceTree = "<group>"; };
+		0B2347E12A37048D00D43FD8 /* MockSignupViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupViewDelegate.swift; sourceTree = "<group>"; };
+		0B2347E32A37054700D43FD8 /* SignupViewDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewDelegateProtocol.swift; sourceTree = "<group>"; };
+		0BB905422A397FEC008E4F85 /* UserWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWebServiceTests.swift; sourceTree = "<group>"; };
+		0BB905452A398370008E4F85 /* UserPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenterTests.swift; sourceTree = "<group>"; };
+		0BB905472A39859C008E4F85 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
+		0BB9054C2A39872F008E4F85 /* MockUserModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserModelValidator.swift; sourceTree = "<group>"; };
+		0BBC0DB82A32E7010094657C /* UserResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserResponseModel.swift; path = ../../Signup/Models/UserResponseModel.swift; sourceTree = "<group>"; };
+		0BBC0DC12A32E7F30094657C /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		0BBC0DC52A32E84C0094657C /* UsersListingSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListingSampleTests.swift; sourceTree = "<group>"; };
+		0BBC0DC72A32E8710094657C /* UsersConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersConstants.swift; sourceTree = "<group>"; };
+		0BBC0DC92A32E94A0094657C /* UsersWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersWebService.swift; sourceTree = "<group>"; };
+		0BBC0DCD2A32EA500094657C /* UserErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,13 +115,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B0727A82A32530900CD1A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B0656712A39AE4900434C83 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0B0656722A39AE5900434C83 /* UserModelValidatorProtocol.swift */,
+				0B0656742A39AF7D00434C83 /* UserWebServiceProtocol.swift */,
+				0B06567A2A39BFCE00434C83 /* UserViewDelegateProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		0B0727842A32517100CD1A7F = {
 			isa = PBXGroup;
 			children = (
 				0B07278F2A32517100CD1A7F /* WebServiceUnitTestSample */,
+				0B0727AC2A32530900CD1A7F /* WebServiceUnitTestSampleTests */,
 				0B07278E2A32517100CD1A7F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				0B07278D2A32517100CD1A7F /* WebServiceUnitTestSample.app */,
+				0B0727AB2A32530900CD1A7F /* WebServiceUnitTestSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +156,223 @@
 		0B07278F2A32517100CD1A7F /* WebServiceUnitTestSample */ = {
 			isa = PBXGroup;
 			children = (
+				0BBC0DBD2A32E7AE0094657C /* Users */,
+				0B0727BE2A3257F300CD1A7F /* Signup */,
 				0B0727902A32517100CD1A7F /* AppDelegate.swift */,
 				0B0727922A32517100CD1A7F /* SceneDelegate.swift */,
-				0B0727942A32517100CD1A7F /* ViewController.swift */,
 				0B0727962A32517100CD1A7F /* Main.storyboard */,
 				0B0727992A32517200CD1A7F /* Assets.xcassets */,
 				0B07279B2A32517200CD1A7F /* LaunchScreen.storyboard */,
 				0B07279E2A32517200CD1A7F /* Info.plist */,
 			);
 			path = WebServiceUnitTestSample;
+			sourceTree = "<group>";
+		};
+		0B0727AC2A32530900CD1A7F /* WebServiceUnitTestSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BBC0DBA2A32E7820094657C /* Users */,
+				0B0727C22A3258B000CD1A7F /* Signup */,
+				0B0727AD2A32530900CD1A7F /* WebServiceUnitTestSampleTests.swift */,
+			);
+			path = WebServiceUnitTestSampleTests;
+			sourceTree = "<group>";
+		};
+		0B0727BE2A3257F300CD1A7F /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				0B2347D82A36FA3400D43FD8 /* Protocols */,
+				0B2347D72A36FA0500D43FD8 /* Presenters */,
+				0B0727C12A32588D00CD1A7F /* Network */,
+				0B0727C02A32580A00CD1A7F /* Controllers */,
+				0B0727BF2A3257F900CD1A7F /* Models */,
+				0B0521A02A38F28C00768B6B /* SignupFormModelValidator.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		0B0727BF2A3257F900CD1A7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B0727BC2A3256E200CD1A7F /* SignupErrors.swift */,
+				0B0727B82A32557400CD1A7F /* SignupFormRequestModel.swift */,
+				0B0727BA2A3256C700CD1A7F /* SignupResponseModel.swift */,
+				0B0727C72A32604100CD1A7F /* SignupConstants.swift */,
+				0B2347CF2A36E8C300D43FD8 /* SignupFormModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0B0727C02A32580A00CD1A7F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B0727942A32517100CD1A7F /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0B0727C12A32588D00CD1A7F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0B0727B62A3254B100CD1A7F /* SignupWebService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0B0727C22A3258B000CD1A7F /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				0B2347DA2A36FA8200D43FD8 /* Mocks */,
+				0B2347D92A36FA5D00D43FD8 /* Presenters */,
+				0B0727C42A3258BD00CD1A7F /* Network */,
+				0B0727C32A3258B700CD1A7F /* Models */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		0B0727C32A3258B700CD1A7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B0727C52A325EFE00CD1A7F /* MockURLProtocol.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0B0727C42A3258BD00CD1A7F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0B0727B42A32532600CD1A7F /* SignupWebServiceTests.swift */,
+				0B05219E2A38F23C00768B6B /* SignupFormModelValidatorTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0B2347D72A36FA0500D43FD8 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				0B2347D12A36EB7400D43FD8 /* SignupPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		0B2347D82A36FA3400D43FD8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0B2347D52A36EDC700D43FD8 /* SignupModelValidatorProtocol.swift */,
+				0B2347DF2A36FFC800D43FD8 /* SignupWebServiceProtocol.swift */,
+				0B2347E32A37054700D43FD8 /* SignupViewDelegateProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0B2347D92A36FA5D00D43FD8 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				0B2347CD2A36E7B500D43FD8 /* SignupPresenterTest.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		0B2347DA2A36FA8200D43FD8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0B2347D32A36EC5300D43FD8 /* MockSignupModelValidator.swift */,
+				0B2347DD2A36FED700D43FD8 /* MockSignupWebService.swift */,
+				0B2347E12A37048D00D43FD8 /* MockSignupViewDelegate.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0BB905412A397EDF008E4F85 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				0BB905472A39859C008E4F85 /* UserPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		0BB905442A39835F008E4F85 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				0BB905452A398370008E4F85 /* UserPresenterTests.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		0BB905492A39867B008E4F85 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0BB9054C2A39872F008E4F85 /* MockUserModelValidator.swift */,
+				0B0656762A39B64A00434C83 /* MockUserWebService.swift */,
+				0B0656782A39BDB200434C83 /* MockUserDelegate.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0BBC0DBA2A32E7820094657C /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				0BB905492A39867B008E4F85 /* Mocks */,
+				0BB905442A39835F008E4F85 /* Presenters */,
+				0BBC0DBC2A32E7940094657C /* Model */,
+				0BBC0DBB2A32E78E0094657C /* Network */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		0BBC0DBB2A32E78E0094657C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0BBC0DC52A32E84C0094657C /* UsersListingSampleTests.swift */,
+				0BB905422A397FEC008E4F85 /* UserWebServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0BBC0DBC2A32E7940094657C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BBC0DBD2A32E7AE0094657C /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				0B0656712A39AE4900434C83 /* Protocols */,
+				0BB905412A397EDF008E4F85 /* Presenters */,
+				0BBC0DC02A32E7C30094657C /* Models */,
+				0BBC0DBF2A32E7BE0094657C /* Controllers */,
+				0BBC0DBE2A32E7B90094657C /* Network */,
+				0B06566F2A39AE3700434C83 /* UserModelValidator.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		0BBC0DBE2A32E7B90094657C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0BBC0DC92A32E94A0094657C /* UsersWebService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0BBC0DBF2A32E7BE0094657C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0BBC0DC12A32E7F30094657C /* UsersViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0BBC0DC02A32E7C30094657C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0BBC0DC72A32E8710094657C /* UsersConstants.swift */,
+				0BBC0DB82A32E7010094657C /* UserResponseModel.swift */,
+				0BBC0DCD2A32EA500094657C /* UserErrors.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +395,24 @@
 			productReference = 0B07278D2A32517100CD1A7F /* WebServiceUnitTestSample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0B0727AA2A32530900CD1A7F /* WebServiceUnitTestSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B0727B12A32530900CD1A7F /* Build configuration list for PBXNativeTarget "WebServiceUnitTestSampleTests" */;
+			buildPhases = (
+				0B0727A72A32530900CD1A7F /* Sources */,
+				0B0727A82A32530900CD1A7F /* Frameworks */,
+				0B0727A92A32530900CD1A7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B0727B02A32530900CD1A7F /* PBXTargetDependency */,
+			);
+			name = WebServiceUnitTestSampleTests;
+			productName = WebServiceUnitTestSampleTests;
+			productReference = 0B0727AB2A32530900CD1A7F /* WebServiceUnitTestSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +425,10 @@
 				TargetAttributes = {
 					0B07278C2A32517100CD1A7F = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					0B0727AA2A32530900CD1A7F = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 0B07278C2A32517100CD1A7F;
 					};
 				};
 			};
@@ -116,6 +446,7 @@
 			projectRoot = "";
 			targets = (
 				0B07278C2A32517100CD1A7F /* WebServiceUnitTestSample */,
+				0B0727AA2A32530900CD1A7F /* WebServiceUnitTestSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +462,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B0727A92A32530900CD1A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +476,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BBC0DCE2A32EA500094657C /* UserErrors.swift in Sources */,
+				0B2347D22A36EB7400D43FD8 /* SignupPresenter.swift in Sources */,
+				0B2347E02A36FFC800D43FD8 /* SignupWebServiceProtocol.swift in Sources */,
 				0B0727952A32517100CD1A7F /* ViewController.swift in Sources */,
 				0B0727912A32517100CD1A7F /* AppDelegate.swift in Sources */,
+				0B0727B72A3254B100CD1A7F /* SignupWebService.swift in Sources */,
+				0B0727C82A32604100CD1A7F /* SignupConstants.swift in Sources */,
+				0B2347D02A36E8C300D43FD8 /* SignupFormModel.swift in Sources */,
+				0B06567B2A39BFCE00434C83 /* UserViewDelegateProtocol.swift in Sources */,
+				0B0656732A39AE5900434C83 /* UserModelValidatorProtocol.swift in Sources */,
+				0B0727B92A32557400CD1A7F /* SignupFormRequestModel.swift in Sources */,
+				0B0727BD2A3256E200CD1A7F /* SignupErrors.swift in Sources */,
+				0BBC0DC82A32E8710094657C /* UsersConstants.swift in Sources */,
+				0BBC0DB92A32E7010094657C /* UserResponseModel.swift in Sources */,
+				0B2347E42A37054700D43FD8 /* SignupViewDelegateProtocol.swift in Sources */,
+				0BB905482A39859C008E4F85 /* UserPresenter.swift in Sources */,
+				0BBC0DC22A32E7F30094657C /* UsersViewController.swift in Sources */,
+				0B2347D62A36EDC700D43FD8 /* SignupModelValidatorProtocol.swift in Sources */,
+				0B0656752A39AF7D00434C83 /* UserWebServiceProtocol.swift in Sources */,
+				0B0656702A39AE3700434C83 /* UserModelValidator.swift in Sources */,
+				0BBC0DCA2A32E94A0094657C /* UsersWebService.swift in Sources */,
+				0B0727BB2A3256C700CD1A7F /* SignupResponseModel.swift in Sources */,
 				0B0727932A32517100CD1A7F /* SceneDelegate.swift in Sources */,
+				0B0521A12A38F28C00768B6B /* SignupFormModelValidator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B0727A72A32530900CD1A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B05219F2A38F23C00768B6B /* SignupFormModelValidatorTests.swift in Sources */,
+				0B0727C62A325EFE00CD1A7F /* MockURLProtocol.swift in Sources */,
+				0B2347DE2A36FED700D43FD8 /* MockSignupWebService.swift in Sources */,
+				0BB905462A398370008E4F85 /* UserPresenterTests.swift in Sources */,
+				0BB905432A397FEC008E4F85 /* UserWebServiceTests.swift in Sources */,
+				0BBC0DC62A32E84C0094657C /* UsersListingSampleTests.swift in Sources */,
+				0B2347D42A36EC5300D43FD8 /* MockSignupModelValidator.swift in Sources */,
+				0B0727B52A32532600CD1A7F /* SignupWebServiceTests.swift in Sources */,
+				0B2347E22A37048D00D43FD8 /* MockSignupViewDelegate.swift in Sources */,
+				0B0727AE2A32530900CD1A7F /* WebServiceUnitTestSampleTests.swift in Sources */,
+				0B2347CE2A36E7B500D43FD8 /* SignupPresenterTest.swift in Sources */,
+				0B0656772A39B64A00434C83 /* MockUserWebService.swift in Sources */,
+				0BB9054D2A39872F008E4F85 /* MockUserModelValidator.swift in Sources */,
+				0B0656792A39BDB200434C83 /* MockUserDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B0727B02A32530900CD1A7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B07278C2A32517100CD1A7F /* WebServiceUnitTestSample */;
+			targetProxy = 0B0727AF2A32530900CD1A7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0B0727962A32517100CD1A7F /* Main.storyboard */ = {
@@ -336,6 +724,42 @@
 			};
 			name = Release;
 		};
+		0B0727B22A32530900CD1A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZP74CSH3QC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jitheshxavier.WebServiceUnitTestSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebServiceUnitTestSample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WebServiceUnitTestSample";
+			};
+			name = Debug;
+		};
+		0B0727B32A32530900CD1A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZP74CSH3QC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jitheshxavier.WebServiceUnitTestSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebServiceUnitTestSample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WebServiceUnitTestSample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +777,15 @@
 			buildConfigurations = (
 				0B0727A22A32517200CD1A7F /* Debug */,
 				0B0727A32A32517200CD1A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B0727B12A32530900CD1A7F /* Build configuration list for PBXNativeTarget "WebServiceUnitTestSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B0727B22A32530900CD1A7F /* Debug */,
+				0B0727B32A32530900CD1A7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
