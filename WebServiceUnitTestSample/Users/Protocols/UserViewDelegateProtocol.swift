@@ -9,6 +9,6 @@ import Foundation
 
 protocol UserViewDelegateProtocol: AnyObject {
     
-    func successfullSignup()
+    func userDetailsFetched()
     func errorHandler(error: UserErrors?)
 }

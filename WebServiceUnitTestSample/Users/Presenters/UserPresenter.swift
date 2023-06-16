@@ -7,13 +7,13 @@
 
 import Foundation
 
-class UserPresenter {
+class UserPresenter: UserPresenterProtocol {
     
     private var userModelValidator: UserModelValidatorProtocol
     private var webService: UserWebServiceProtocol
     private weak var delegate: UserViewDelegateProtocol?
     
-    init(userModelValidator: UserModelValidatorProtocol, webService: UserWebServiceProtocol, delegate: UserViewDelegateProtocol) {
+    required init(userModelValidator: UserModelValidatorProtocol, webService: UserWebServiceProtocol, delegate: UserViewDelegateProtocol) {
         self.userModelValidator = userModelValidator
         self.webService = webService
         self.delegate = delegate
@@ -25,7 +25,7 @@ class UserPresenter {
             return
         }
         
-        webService.userListing { (responseModel, error) in
+        webService.userListing(userID: userId) { (responseModel, error) in
             
             if let error = error {
                 self.delegate?.errorHandler(error: error)
@@ -34,7 +34,7 @@ class UserPresenter {
             
             if let responseModel = responseModel {
                 print(responseModel)
-                self.delegate?.successfullSignup()
+                self.delegate?.userDetailsFetched()
                 return
             }
         }

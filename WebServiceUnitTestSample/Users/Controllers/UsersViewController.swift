@@ -9,23 +9,32 @@ import UIKit
 
 class UsersViewController: UIViewController {
 
+    @IBOutlet weak var userIDTextField: UITextField!
+    @IBOutlet weak var submitButton: UIButton!
+    var userPresenter: UserPresenterProtocol!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let modelValidator = UserModelValidator()
-        let url = String(format: UsersConstants.listUserURLString, "1")
-        let webService = UsersWebService(urlString: url)
+        let webService = UsersWebService(urlString: UsersConstants.listUserURLString)
 
-        let userPresenter = UserPresenter(userModelValidator: modelValidator, webService: webService, delegate: self)
-        
-        userPresenter.processGetUserDetails(withUserId: "2")
+        if userPresenter == nil {
+            userPresenter = UserPresenter(userModelValidator: modelValidator, webService: webService, delegate: self)
+        }
+    }
+    
+    @IBAction func submitAction(_ sender: UIButton) {
+        if let userId = userIDTextField.text, userId != "" {
+            userPresenter.processGetUserDetails(withUserId: userId)
+        }
     }
 }
 
 extension UsersViewController: UserViewDelegateProtocol {
     
-    func successfullSignup() {
-        print("successfullSignup")
+    func userDetailsFetched() {
+        print("userDetailsFetched")
     }
     
     func errorHandler(error: UserErrors?) {

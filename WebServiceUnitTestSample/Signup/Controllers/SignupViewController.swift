@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SignupViewController: UIViewController {
     
 
     override func viewDidLoad() {
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: SignupViewDelegateProtocol {
+extension SignupViewController: SignupViewDelegateProtocol {
     
     func successfullSignup() {
         print("successfullSignup")

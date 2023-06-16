@@ -8,5 +8,5 @@
 import Foundation
 
 protocol UserWebServiceProtocol {
-    func userListing(completionHandler: @escaping (UserResponseModel?, UserErrors?) -> Void)
+    func userListing(userID: String, completionHandler: @escaping (UserResponseModel?, UserErrors?) -> Void)
 }

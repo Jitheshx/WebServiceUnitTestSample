@@ -17,8 +17,9 @@ class UsersWebService: UserWebServiceProtocol {
         self.urlSession = urlSession
     }
 
-    func userListing(completionHandler: @escaping (UserResponseModel?, UserErrors?) -> Void) {
+    func userListing(userID: String, completionHandler: @escaping (UserResponseModel?, UserErrors?) -> Void) {
         
+        let urlString = String(format: urlString, userID)
         guard let url = URL(string: urlString) else {
             completionHandler(nil, UserErrors.invalidURLString)
             return

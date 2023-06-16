@@ -14,7 +14,7 @@ class MockUserDelegate: UserViewDelegateProtocol {
     var expectation: XCTestExpectation?
     var error: UserErrors?
 
-    func successfullSignup() {
+    func userDetailsFetched() {
         expectation?.fulfill()
     }
     

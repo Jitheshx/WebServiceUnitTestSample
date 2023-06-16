@@ -13,7 +13,7 @@ class MockUserWebService: UserWebServiceProtocol {
     var isUserWebServiceMethodCalled: Bool = false
     var shouldReturnError: Bool = false
 
-    func userListing(completionHandler: @escaping (UserResponseModel?, UserErrors?) -> Void) {
+    func userListing(userID: String, completionHandler: @escaping (UserResponseModel?, UserErrors?) -> Void) {
      
         isUserWebServiceMethodCalled = true
         
